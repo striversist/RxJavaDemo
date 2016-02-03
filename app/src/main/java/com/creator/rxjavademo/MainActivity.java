@@ -1,6 +1,7 @@
 package com.creator.rxjavademo;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
@@ -115,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onNext(String content) {
+                    public void onNext(@NonNull String content) {
                         Log.d(TAG, "onNext: content.size=" + content.length());
                     }
                 });
